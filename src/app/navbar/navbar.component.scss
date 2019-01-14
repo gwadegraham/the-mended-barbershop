@@ -1,0 +1,11 @@
+@import "src/custom_variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.nav-text  {
+  color: $laundry-blue;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a:hover {
+  color: #ed8a63;
+}

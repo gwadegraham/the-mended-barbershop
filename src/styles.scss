@@ -1,0 +1,28 @@
+@import "custom_variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fffaf0;
+}

@@ -1,0 +1,35 @@
+.parallax{
+    background-image: url("src/assets/images/hero.jpg"); 
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#header{
+  color: #ed8a63;
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 50%;
+  font-family: 'Bungee', cursive;
+}
+
+.text-box{
+	height: 600px;
+	padding: 50px;
+}
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.snapwidget-widget {
+  width: 100%;
+  border: 0; 
+  overflow:hidden; 
+  height:400px;
+}
