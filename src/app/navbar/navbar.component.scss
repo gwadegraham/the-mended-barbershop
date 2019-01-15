@@ -9,3 +9,16 @@
 a:hover {
   color: #ed8a63;
 }
+
+.navbar-brand {
+  display:inline-block; 
+}
+
+.navbar-brand img {
+ max-height: 100%;
+ max-width: 10%;
+}
+
+#logo-img {
+  margin-right: -28em;
+}
