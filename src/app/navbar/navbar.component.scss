@@ -1,13 +1,42 @@
 @import "src/custom_variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 
-.nav-text  {
-  color: $laundry-blue;
-  font-family: 'Quicksand', sans-serif;
+// .nav-text  {
+//   color: white;
+//   font-family: 'Roboto', sans-serif;
+//   padding: 0 0px; /* more proper use of padding */
+//   line-height: 100px; /* line-height to allow full clickable area */
+//   display: block;
+// }
+// 
+// .navbar a {
+//   margin-left: 0;
+// }
+
+.navbar ul {
+  margin: 0;  /* <--- THIS IS WHAT REMOVES BLANK SPACE ABOVE/BELOW NAVBAR */
+}
+
+#navbarNavDropdown > ul > li > a:hover {
+  color: #ed8a63;
+}
+
+.navbar ul li a, .nav-text {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 70px; /* more proper use of padding */
+  line-height: 100px; /* line-height to allow full clickable area */
+  display: block;
 }
 
 a:hover {
   color: #ed8a63;
+  background-color: white;
+}
+
+a:active {
+  color: #ed8a63;
+  background-color: white;
 }
 
 .navbar-brand {
@@ -21,4 +50,12 @@ a:hover {
 
 #logo-img {
   margin-right: -28em;
+}
+
+.navbar {
+  // background-color: transparent !important;
+  background-image: url("src/assets/images/hero-2.jpg"); 
+  background-position: center top;
+  background-size: cover;
+  max-height: 100px;
 }

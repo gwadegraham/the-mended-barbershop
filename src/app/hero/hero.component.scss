@@ -1,6 +1,6 @@
 @import "src/custom_variables";
 @import "node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Bungee|Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900,900i');
 
 /* Container holding the image and the text */
 .container {
@@ -24,45 +24,56 @@
 }
 
 .parallax{
-    background-image: url("src/assets/images/hero.jpg"); 
-    min-height: 500px; 
+    background-image: linear-gradient(to bottom, transparent 10%, black 100%), url("src/assets/images/hero-2.jpg"); 
+    min-height: 700px; 
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
 }
 
+// .parallax::after {
+//   display: block;
+//   position: relative;
+//   background-image: linear-gradient(to bottom, transparent 0%, white 100%);
+//   margin-top: -150px;
+//   height: 150px;
+//   width: 100%;
+//   content: '';
+// }
+
 #header{
-  color: #ed8a63;
-  border-color: #ed8a63;
-  border-radius: 25px;
-  background: #fffaf0;
-  font-weight: bold;
   position: absolute;
   z-index: 1000;
-  top: 30%;
-  left: 8%;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 100%;
+  top: 60%;
+  left: 87%;
   transform: translate(-50%, -50%);
   width: 20%;
   height: 15%;
 }
 
-#header2{
+#header > a {
+  font-family: 'Roboto', sans-serif;
   color: #ed8a63;
-  border-color: #ed8a63;
-  font-weight: bold;
-  position: absolute;
-  z-index: 1000;
-  top: 50%;
-  left: 50%;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 250%;
-  transform: translate(-50%, -50%);
-  max-width: 80%;
+  font-style: italic;
+  font-weight: black;
+  font-size: 300%;
 }
+
+// #header2{
+//   color: #ed8a63;
+//   border-color: #ed8a63;
+//   font-weight: bold;
+//   position: absolute;
+//   z-index: 1000;
+//   top: 50%;
+//   left: 50%;
+//   font-family: 'Roboto', sans-serif;
+//   font-size: 250%;
+//   transform: translate(-50%, -50%);
+//   max-width: 80%;
+// }
 
 #button-container {
   width: 100%;
