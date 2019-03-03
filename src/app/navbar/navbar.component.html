@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <!-- <a class="navbar-brand nav-text" id="logo-img" href="#"><img src="../assets/images/Original.png"></a> -->
+  
   <a class="navbar-brand nav-text" href="#">The Mended Barber</a>
   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,14 +10,49 @@
         <a class="nav-link nav-text" href="#">My Story<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-text" href="#">Gallery</a>
+        <a class="nav-link nav-text" routerLink="/gallery" routerLinkActive="active">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-text" href="#">Contact Us</a>
+        <a class="nav-link nav-text" id="contact-link" href="#">Contact Me</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link nav-text" href="https://squareup.com/appointments/book/84P944HSXSB0Z/the-mended-barbershop-jacksonville-ar" target="_blank">Make An Appointment</a>
-      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link nav-text" id="appt-link" href="https://squareup.com/appointments/book/84P944HSXSB0Z/the-mended-barbershop-jacksonville-ar" target="_blank">Make An Appointment</a>
+      </li> -->
     </ul>
   </div>
+  <button mat-flat-button onClick="window.open('//squareup.com/appointments/book/84P944HSXSB0Z/the-mended-barbershop-jacksonville-ar')" >Make An Appointment</button>
+  <a class="navbar-brand nav-text" id="logo-img" href="#"><img src="../assets/images/Original.png"></a>
 </nav>
+
+
+<!-- Navigation -->
+<!-- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="#">
+		The Mended Barber </a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<!-- <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="#">My Story</a>
+			</li>
+			<li>
+			<a routerLink="/gallery" routerLinkActive="active" >Gallery</a>
+			</li>
+			<li>
+			<a href="#">Contact Us</a>
+			</li>
+			<li>
+			<a href="https://squareup.com/appointments/book/84P944HSXSB0Z/the-mended-barbershop-jacksonville-ar" target="_blank">Make An Appointment</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+<!-- </div> -->
+<!-- /.container -->
+<!-- </nav> -->

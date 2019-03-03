@@ -25,9 +25,9 @@
 }
 
 .footer {
-  background: white;
+  background: #fffaf0;;
   position:fixed;
-  bottom:0px;
+  bottom:0;
   // align-items: center;
   display: inline-block;
   width: 100%;
@@ -36,6 +36,7 @@
 
 a:hover {
   color: #3895D3;
+  text-decoration: none;
 }
 
 #container {
@@ -43,8 +44,8 @@ a:hover {
 }
 
 .fab, .fas {
-  color: #3895D3;
-  background: white;
+  color: black;
+  background: #fffaf0;
 }
 
 .fab, .fas {
@@ -61,14 +62,20 @@ a:hover {
 }
 
 .social-text {
-  color: #3895D3;
-  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  // text-transform: uppercase;
   font-style: italic;
   font-size: 15px;
   // margin: 7px -20px;
   margin-top: 7px;
   margin-left: -20px;
   margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 // .social-footer {

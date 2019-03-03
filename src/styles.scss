@@ -1,12 +1,14 @@
 @import "custom_variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300,400,500,600,700');
 
 /* Container holding the image and the text */
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: #bfa694;
 }
 
 /* Centered text */
@@ -24,5 +26,10 @@
 }
 
 body {
-  background: #fffaf0;
+  background: #bfa694;
+  // background-image: linear-gradient(to bottom, #000000, #100f0f, #191919, #232222, #2c2b2b);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3895D3 !important;
 }
