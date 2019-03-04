@@ -1,6 +1,9 @@
 @import "src/custom_variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 // @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900,900i');
+@import "../../assets/css/theme.scss";
+@import "../../assets/font-awesome/css/font-awesome.min.css";
+@import "../../assets/css/lightbox.scss";
 
 /* Container holding the image and the text */
 .container {
@@ -180,5 +183,8 @@ a[data-fluidbox] img {
     transition: all .25s ease-in-out;
     }
 
+.lightbox {
+  display: none;
+}
 
 

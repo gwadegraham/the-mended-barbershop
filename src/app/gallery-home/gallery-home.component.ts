@@ -8,9 +8,18 @@ import * as $ from 'jquery';
 })
 export class GalleryHomeComponent implements OnInit {
 
+  loadScript(src){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    document.getElementsByTagName("body")[0].appendChild(script);
+    script.src = src;
+  }
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit( ) { 
+  
+    this.loadScript("../../assets/js/lightbox.js");
   }
 
 }
