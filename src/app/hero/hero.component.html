@@ -21,7 +21,7 @@
 </div> -->
 <!-- <slideshow [imageUrls]="imageUrlArray"></slideshow> -->
 <!-- <div class="parallax"> -->
-  <div  class="swiper-container" [swiper]="config" [swiper]="autoplayConfig" [(index)]="index">
+  <div  class="swiper-container" [swiper]="config" [swiper]="autoplayConfig" >
     <div class="swiper-wrapper">
       <div *ngFor="let slide of slides" class="swiper-slide">
         <img src ={{slide}}>
