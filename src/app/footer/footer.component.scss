@@ -99,3 +99,24 @@ ul {
   
 }
 
+@media only screen and (max-width :  1440px){
+  
+  #social-media {
+    margin-left: -19%;
+  }
+  
+  #contact-info {
+    margin-right: -14%;
+  }
+  
+  .social-text {
+    margin-top: 9px;
+    font-size: 15px;
+  }
+  
+  .fab, .fas {
+    font-size: 30px;
+  }
+  
+}
+
