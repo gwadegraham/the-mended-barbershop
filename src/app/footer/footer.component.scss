@@ -78,28 +78,24 @@ ul {
   list-style-type: none;
 }
 
-// .social-footer {
-//   padding: 1rem;
-//   background: #fffaf0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// 
-//   .social-footer-icons {
-//     li:last-of-type {
-//       margin-right: 0;
-//     }
-// 
-//     .fa {
-//       font-size: 1.3rem;
-//       color: #3B5998;
-// 
-//       &:hover {
-//         color: darken(#fffaf0, 25%);
-//         transition: color 0.3s ease-in;
-//       }
-//     }
-//   }
-// }
-
+@media only screen and (max-width :  1200px){
+  
+  #social-media {
+    margin-left: -19%;
+  }
+  
+  #contact-info {
+    margin-right: -14%;
+  }
+  
+  .social-text {
+    margin-top: 9px;
+    font-size: 13px;
+  }
+  
+  .fab, .fas {
+    font-size: 27px;
+  }
+  
+}
 

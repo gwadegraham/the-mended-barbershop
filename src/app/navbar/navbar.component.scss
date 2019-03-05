@@ -95,11 +95,6 @@ a:hover:after {
   left: 18%;
 }
 
-#appt-link:hover:after {
-  width: 92%;
-  left: 10%;
-}
-
 .navbar-brand:hover:after {
   width: 90%;
   left: 5%;
@@ -147,4 +142,47 @@ a:hover:after {
   min-width: 20%;
   height: 40px;
   margin-left: 15%;
+}
+
+@media only screen and (max-width :  1200px){
+  .mat-flat-button{
+    margin-left: 0%;
+  }
+  
+  .navbar-nav {
+    width: 500px;
+  }
+  
+  .mat-flat-button {
+    font-size: 14px;
+  }
+  
+  #logo-img {
+    min-width: 95%;
+    margin-left: 0%;
+  }
+  
+  a {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+  
+  li {
+    padding-left: 2%;
+  }
+  
+  a:hover:after { 
+    width: 90%;
+    left: 11%; 
+  }
+
+  #contact-link:hover:after {
+    left: 7%;
+    width: 95%;
+  }
+
+  .navbar-brand:hover:after {
+    width: 90%;
+    left: 5%;
+  }
 }
