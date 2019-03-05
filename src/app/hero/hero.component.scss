@@ -203,33 +203,9 @@
 }
 
 
+@media only screen and (max-width :  1440px){
+  .swiper-container {
+    height: 80.9vh;
+  }
 
-// 
-// .autoplay
-// {
-// 	position: absolute;
-// 	color: #000;
-// 	font: 100px/100% arial, sans-serif;
-// 	right: 15px;
-// 	text-decoration: none;
-// 	text-shadow: 0 1px 0 #fff;
-// 	top: 15px;
-// 	width:auto;
-// 	height:auto;
-// 	z-index:999;
-// 	opacity:0.4;
-// 	transition: opacity .1s ease-in, transform .1s ease-out; 
-// 	animation: fade_close 3s ease-out;
-// }
-// 
-// @keyframes fade_close
-// {
-// 	0% { opacity: 0.8; } 
-// 	50% { opacity: 0.8; }
-// 	to { opacity: 0.4; }
-// }
-// 
-// .autoplay:active
-// {
-//   transform:scale(0.8);
-// }
+}
