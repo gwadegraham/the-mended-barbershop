@@ -186,3 +186,46 @@ a:hover:after {
     left: 5%;
   }
 }
+
+@media only screen and (max-width :  1440px){
+  .mat-flat-button{
+    margin-left: 0%;
+  }
+  
+  .navbar-nav {
+    width: 680px;
+  }
+  
+  .mat-flat-button {
+    font-size: 15px;
+  }
+  
+  #logo-img {
+    min-width: 95%;
+    margin-left: 0%;
+  }
+  
+  a {
+    font-size: 16px;
+    letter-spacing: 0.06em;
+  }
+  
+  li {
+    padding-left: 3%;
+  }
+  
+  a:hover:after { 
+    width: 82%;
+    left: 18%;
+  }
+
+  #contact-link:hover:after {
+    left: 12%;
+    width: 89%;
+  }
+
+  .navbar-brand:hover:after {
+    width: 90%;
+    left: 5%;
+  }
+}
