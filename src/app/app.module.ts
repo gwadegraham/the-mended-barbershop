@@ -29,7 +29,8 @@ const appRoutes: Routes = [
     component: HeroComponent,
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
+  { path: 'my-story', component: HoursInfoComponent }
   // ,
   // { path: '**', component: PageNotFoundComponent }
 ];
