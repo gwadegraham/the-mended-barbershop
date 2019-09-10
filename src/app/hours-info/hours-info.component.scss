@@ -2,6 +2,31 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Bungee|Lato');
 
+h3 {
+  color: $laundry-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+
+h4 {
+  color: #3a4660;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 3%;
+  font-size: 30px;
+}
+
 .hours-container {
   background: #fffaf0;
   color: $laundry-blue;
@@ -10,14 +35,25 @@
 
 .company-about {
   float: left;
-  width: 27%;
-  margin: 70px 100px;
+  width: 25%;
+  margin: 18% 5%;
+}
+
+.profile-pic-div {
+  float: left;
+  width: 25%;
+  margin-top: 14%;
+  margin-left: 3%;
+  display: block;
+  text-align: center;
 }
 
 .company-hours {
-  float: right;
-  width: 27%;
-  margin: 70px 100px;
+  float: left;
+  width: 25%;
+  margin-top: 18%;
+  margin-right: 3%;
+  margin-left: 5%;
 }
 
 .hours-list {
@@ -37,5 +73,5 @@
 
 .hours-div {
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 20%;
 }
