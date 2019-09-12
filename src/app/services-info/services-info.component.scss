@@ -1,0 +1,57 @@
+@import "src/custom_variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Bungee|Lato');
+
+h3 {
+  color: $laundry-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+
+h4 {
+  color: #3a4660;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 20px;
+}
+
+.services-container {
+  color: $laundry-blue;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+}
+
+.services-left {
+  float: left;
+  width: 30%;
+  margin: 10% 10%;
+}
+
+.services-right {
+  float: right;
+  width: 30%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.service-item-div {
+  margin-bottom: 7%;
+}
+
+.currency {
+  float: right;
+}

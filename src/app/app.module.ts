@@ -17,6 +17,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { ServicesInfoComponent } from './services-info/services-info.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     redirectTo: '',
     pathMatch: 'full'
   },
-  { path: 'my-story', component: HoursInfoComponent }
+  { path: 'my-story', component: HoursInfoComponent },
+  { path: 'services', component: ServicesInfoComponent}
   // ,
   // { path: '**', component: PageNotFoundComponent }
 ];
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     HeroComponent,
     HoursInfoComponent,
     GalleryHomeComponent,
-    HomePageComponent
+    HomePageComponent,
+    ServicesInfoComponent
   ],
   imports: [
     BrowserModule,
