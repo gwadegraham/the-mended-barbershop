@@ -17,6 +17,34 @@ h3 {
   font-size: 50px;
 }
 
+.book-now {
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.mat-flat-button {
+  color: #3a4660;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  background-color: #bfa694;
+  border-radius: 5px;
+  min-width: 20%;
+  height: 50px;
+  border: 2px solid #3a4660;
+}
+
+.mat-flat-button:hover {
+  background-color: #3a4660;
+  color: #fff;
+}
+
 
 h4 {
   color: #3a4660;
