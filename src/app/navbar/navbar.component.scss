@@ -86,6 +86,11 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
+.active-link {
+  color: #3895D3;
+}
+
 a:hover:after { 
   width: 85%; 
   left: 20%; 
