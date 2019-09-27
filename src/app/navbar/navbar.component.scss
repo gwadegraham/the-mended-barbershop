@@ -86,13 +86,18 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
+.active-link {
+  color: #3895D3;
+}
+
 a:hover:after { 
   width: 85%; 
   left: 20%; 
 }
 
-#contact-link:hover:after {
-  left: 18%;
+#services-link:hover:after {
+  left: 19%;
 }
 
 .navbar-brand:hover:after {
@@ -176,7 +181,7 @@ a:hover:after {
     left: 11%; 
   }
 
-  #contact-link:hover:after {
+  #services-link:hover:after {
     left: 7%;
     width: 95%;
   }
@@ -219,7 +224,7 @@ a:hover:after {
     left: 18%;
   }
 
-  #contact-link:hover:after {
+  #services-link:hover:after {
     left: 12%;
     width: 89%;
   }

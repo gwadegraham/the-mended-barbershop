@@ -17,6 +17,34 @@ h3 {
   font-size: 50px;
 }
 
+.book-now {
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.mat-flat-button {
+  color: #3a4660;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  background-color: #bfa694;
+  border-radius: 5px;
+  min-width: 20%;
+  height: 50px;
+  border: 2px solid #3a4660;
+}
+
+.mat-flat-button:hover {
+  background-color: #3a4660;
+  color: #fff;
+}
+
 
 h4 {
   color: #3a4660;
@@ -24,65 +52,9 @@ h4 {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   margin-top: 3%;
-  font-size: 30px;
+  margin-bottom: 3%;
+  font-size: 20px;
 }
-
-.hours-container {
-  background: #fffaf0;
-  color: $laundry-blue;
-  font-family: 'Roboto', sans-serif;
-}
-
-.company-about {
-  float: left;
-  margin-top: 5%;
-}
-
-.profile-pic-div {
-  float: left;
-  width: 60%;
-  margin-top: 5%;
-  display: block;
-}
-
-.company-hours {
-  float: left;
-  //width: 25%;
-  margin-top: 3%;
-  margin-right: 3%;
-  //margin-left: 5%;
-}
-
-.hours-list {
-  list-style-type: none;
-  float: right;
-}
-
-.days-list {
-  list-style-type: none;
-  float: left;
-  font-weight: bold;
-}
-
-.days-div {
-  display: inline-block;
-}
-
-.hours-div {
-  display: inline-block;
-  //margin-left: 20%;
-}
-
-.contact-me {
-  margin-top: 5%;
-}
-
-
-
-
-
-
-
 
 .services-container {
   color: $laundry-blue;
@@ -93,14 +65,13 @@ h4 {
 .services-left {
   float: left;
   width: 30%;
-  margin: 7% 10%;
+  margin: 10% 10%;
 }
 
 .services-right {
-  display: grid;
   float: right;
   width: 30%;
-  margin-top: 7%;
+  margin-top: 10%;
   margin-right: 10%;
   margin-left: 5%;
 }
