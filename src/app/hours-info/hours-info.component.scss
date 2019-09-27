@@ -35,25 +35,22 @@ h4 {
 
 .company-about {
   float: left;
-  width: 25%;
-  margin: 18% 5%;
+  margin-top: 5%;
 }
 
 .profile-pic-div {
   float: left;
-  width: 25%;
-  margin-top: 14%;
-  margin-left: 3%;
+  width: 60%;
+  margin-top: 5%;
   display: block;
-  text-align: center;
 }
 
 .company-hours {
   float: left;
-  width: 25%;
-  margin-top: 18%;
+  //width: 25%;
+  margin-top: 3%;
   margin-right: 3%;
-  margin-left: 5%;
+  //margin-left: 5%;
 }
 
 .hours-list {
@@ -73,5 +70,45 @@ h4 {
 
 .hours-div {
   display: inline-block;
-  margin-left: 20%;
+  //margin-left: 20%;
+}
+
+.contact-me {
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+.services-container {
+  color: $laundry-blue;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+}
+
+.services-left {
+  float: left;
+  width: 30%;
+  margin: 7% 10%;
+}
+
+.services-right {
+  display: grid;
+  float: right;
+  width: 30%;
+  margin-top: 7%;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.service-item-div {
+  margin-bottom: 7%;
+}
+
+.currency {
+  float: right;
 }
