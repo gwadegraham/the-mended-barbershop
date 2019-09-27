@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+
+
+  }
 
   ngOnInit() {
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    let serviceLink = document.getElementById('services-link');
+    let storyLink = document.getElementById('story-link');
+    let galleryLink = document.getElementById('gallery-link');
+
+    navBarToggle.addEventListener('click', function () {
+
+      mainNav.classList.toggle('active');
+    });
+
+    storyLink.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+
+    galleryLink.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+
+    serviceLink.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+
   }
 
 }
+
+
