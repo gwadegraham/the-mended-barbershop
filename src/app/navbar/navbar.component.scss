@@ -81,6 +81,7 @@ a {
   background-position: center top;
   background-size: cover;
   //max-height: 100px;
+  display: block;
 }
 
 .navbar-nav {
@@ -89,10 +90,6 @@ a {
 }
 
 .active {
-  display: block;
-}
-
-.navbar-nav:active {
   display: block;
 }
 
