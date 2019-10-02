@@ -2,6 +2,8 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Bungee|Lato');
 
+//Mobile//
+
 h3 {
   color: $laundry-blue;
   text-transform: uppercase;
@@ -9,7 +11,7 @@ h3 {
   letter-spacing: 0.07em;
   display: inline-block;
   position: absolute;
-  top: 18%;
+  top: 12vh;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
@@ -17,13 +19,18 @@ h3 {
   font-size: 50px;
 }
 
+#services-title.active {
+  top: 35vh;
+}
+
 .book-now {
   display: inline-block;
   position: absolute;
-  top: 85%;
+  top: 100vh;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
+  margin-bottom: 7vh;
 }
 
 .mat-flat-button {
@@ -53,33 +60,125 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 3%;
   margin-bottom: 3%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .services-container {
   color: $laundry-blue;
   font-family: 'Roboto', sans-serif;
   display: inline-block;
-}
-
-.services-left {
-  float: left;
-  width: 30%;
-  margin: 10% 10%;
-}
-
-.services-right {
-  float: right;
-  width: 30%;
-  margin-top: 10%;
-  margin-right: 10%;
-  margin-left: 5%;
+  margin-top: 3vh;
 }
 
 .service-item-div {
   margin-bottom: 7%;
+  height: 22vh;
+  font-size: 13px;
 }
 
 .currency {
   float: right;
+  font-size: 15px;
+  margin-top: -0.3vh;
+}
+
+.services-left {
+  float: left;
+  margin: 10vh 10%;
+  width: 35%;
+}
+
+.services-right {
+  float: right;
+  width: 35%;
+  margin-top: 10vh;
+  margin-right: 10%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  h3 {
+    color: $laundry-blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.07em;
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+  }
+
+  .book-now {
+    display: inline-block;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+  }
+
+  .mat-flat-button {
+    color: #3a4660;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.07em;
+    background-color: #bfa694;
+    border-radius: 5px;
+    min-width: 20%;
+    height: 50px;
+    border: 2px solid #3a4660;
+  }
+
+  .mat-flat-button:hover {
+    background-color: #3a4660;
+    color: #fff;
+  }
+
+
+  h4 {
+    color: #3a4660;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 20px;
+  }
+
+  .services-container {
+    color: $laundry-blue;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+  }
+
+  .services-left {
+    float: left;
+    width: 30%;
+    margin: 10% 10%;
+  }
+
+  .services-right {
+    float: right;
+    width: 30%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+
+  .service-item-div {
+    margin-bottom: 7%;
+  }
+
+  .currency {
+    float: right;
+  }
+
 }

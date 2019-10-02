@@ -10,6 +10,15 @@ export class ServicesInfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    let servicesTitle = document.getElementById('services-title');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+
+    navBarToggle.addEventListener('click', function () {
+
+      servicesTitle.classList.toggle('active');
+    });
+
   }
 
 }
