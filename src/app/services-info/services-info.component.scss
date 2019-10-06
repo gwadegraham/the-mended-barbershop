@@ -23,10 +23,15 @@ h3 {
   top: 35vh;
 }
 
+.button-div {
+  display: inline-block;
+  height: 10vh;
+}
+
 .book-now {
   display: inline-block;
   position: absolute;
-  top: 105vh;
+  top: 130vh;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
@@ -60,39 +65,44 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 3%;
   margin-bottom: 3%;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .services-container {
   color: $laundry-blue;
   font-family: 'Roboto', sans-serif;
   display: inline-block;
-  margin-top: 3vh;
+  margin-top: 12vh;
 }
 
 .service-item-div {
-  margin-bottom: 7%;
+  margin-bottom: -15%;
   height: 22vh;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .currency {
   float: right;
-  font-size: 15px;
+  font-size: 18px;
   margin-top: -0.3vh;
 }
 
 .services-left {
   float: left;
-  margin: 10vh 10%;
-  width: 35%;
+  //margin: 5vh 10%;
+  margin-top: 0vh;
+  margin-bottom: 5vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
 }
 
 .services-right {
-  float: right;
-  width: 35%;
-  margin-top: 10vh;
-  margin-right: 10%;
+  float: left;
+  width: 80%;
+  margin: 0vh 10%;
+  /* margin-top: 10vh; */
+  /* margin-right: 10%; */
 }
 
 
