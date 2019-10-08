@@ -33,11 +33,11 @@
 
 }
 
-.footer[_ngcontent-c2] {
+.footer {
   background: #fffaf0;
   /* bottom: 0vh; */
   width: 100%;
-  position: absolute;
+  position: sticky;
   /* max-height: 600vh; */
   height: 20vh;
   bottom: -60vh;
