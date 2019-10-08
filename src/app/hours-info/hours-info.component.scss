@@ -2,19 +2,28 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Bungee|Lato');
 
+.h3-div {
+  top: 13vh;
+  display: flex;
+  margin: 0vw 10vw;
+}
+
 h3 {
-  color: $laundry-blue;
+  color: #3a4660;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.07em;
-  display: inline-block;
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* display: contents; */
+  /* position: absolute; */
+  /* top: 12vh; */
+  /* left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%); */
+  transform: translate(-0%, -0%);
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 50px;
+  /* width: 50%; */
+  margin-top: 1vh;
 }
 
 
@@ -25,6 +34,10 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 3%;
   font-size: 30px;
+}
+
+#my-story-title.active {
+  top: 35vh;
 }
 
 .hours-container {
@@ -77,13 +90,6 @@ h4 {
   margin-top: 5%;
 }
 
-
-
-
-
-
-
-
 .services-container {
   color: $laundry-blue;
   font-family: 'Roboto', sans-serif;
@@ -92,17 +98,22 @@ h4 {
 
 .services-left {
   float: left;
-  width: 30%;
-  margin: 7% 10%;
+  width: 80vw;
+  margin: 7% 10vw;
 }
 
 .services-right {
   display: grid;
-  float: right;
-  width: 30%;
-  margin-top: 7%;
-  margin-right: 10%;
-  margin-left: 5%;
+  //float: right;
+  //width: 30%;
+  //margin-top: 7%;
+  //margin-right: 10%;
+  //margin-left: 5%;
+
+  float: left;
+  width: 80vw;
+  margin: 7% 10vw;
+
 }
 
 .service-item-div {
@@ -111,4 +122,110 @@ h4 {
 
 .currency {
   float: right;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    color: $laundry-blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.07em;
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+  }
+
+
+  h4 {
+    color: #3a4660;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+    font-size: 30px;
+  }
+
+  .hours-container {
+    background: #fffaf0;
+    color: $laundry-blue;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .company-about {
+    float: left;
+    margin-top: 5%;
+  }
+
+  .profile-pic-div {
+    float: left;
+    width: 60%;
+    margin-top: 5%;
+    display: block;
+  }
+
+  .company-hours {
+    float: left;
+    //width: 25%;
+    margin-top: 3%;
+    margin-right: 3%;
+    //margin-left: 5%;
+  }
+
+  .hours-list {
+    list-style-type: none;
+    float: right;
+  }
+
+  .days-list {
+    list-style-type: none;
+    float: left;
+    font-weight: bold;
+  }
+
+  .days-div {
+    display: inline-block;
+  }
+
+  .hours-div {
+    display: inline-block;
+    //margin-left: 20%;
+  }
+
+  .contact-me {
+    margin-top: 5%;
+  }
+
+  .services-container {
+    color: $laundry-blue;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+  }
+
+  .services-left {
+    float: left;
+    width: 30%;
+    margin: 7% 10%;
+  }
+
+  .services-right {
+    display: grid;
+    float: right;
+    width: 30%;
+    margin-top: 7%;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+
+  .service-item-div {
+    margin-bottom: 7%;
+  }
+
+  .currency {
+    float: right;
+  }
 }
