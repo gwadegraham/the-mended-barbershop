@@ -1,6 +1,89 @@
 @import "src/custom_variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@mixin transform($property) {
+  transform: $property;
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-trasform: $property;
+}
+
+@mixin transition($property){
+  transition: $property;
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+
+  figure {
+    align-self: center;;
+    max-height: 80px;
+    cursor: pointer;
+    .inner {
+      width: 40px;
+      height: 40px;
+      //margin: 20px auto;
+      position: relative;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        transition: top 0.1s ease-in-out 0.2s, transform 0.2s ease-in-out, opacity 0.1s ease-in-out 0.1s, left 0.1s ease-in-out;
+        -webkit-transition: top 0.1s ease-in-out 0.2s, transform 0.2s ease-in-out, opacity 0.1s ease-in-out 0.1s, left 0.1s ease-in-out;
+        -moz-transition: top 0.1s ease-in-out 0.2s, transform 0.2s ease-in-out, opacity 0.1s ease-in-out 0.1s, left 0.1s ease-in-out;
+        -ms-transition: top 0.1s ease-in-out 0.2s, transform 0.2s ease-in-out, opacity 0.1s ease-in-out 0.1s, left 0.1s ease-in-out;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2), &:nth-child(4) {
+          top: 11px;
+        }
+        &:nth-child(3) {
+          top: 22px;
+        }
+      }// end span
+    }// end inner
+    &.revolve {
+      .inner {
+        span {
+          transition: top 0.1s ease-in-out, transform 0.2s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, left 0.2s ease-in-out;
+          -webkit-transition: top 0.1s ease-in-out, transform 0.2s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, left 0.2s ease-in-out;
+          -moz-transition: top 0.1s ease-in-out, transform 0.2s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, left 0.2s ease-in-out;
+          -ms-transition: top 0.1s ease-in-out, transform 0.2s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, left 0.2s ease-in-out;
+          &:nth-child(1) {
+            transform-origin: center;
+            @include transform( rotateY(90deg) );
+          }
+          &:nth-child(2) {
+            @include transform( rotate(45deg) );
+          }
+          &:nth-child(4) {
+            @include transform( rotate(-45deg) );
+          }
+          &:nth-child(3) {
+            transform-origin: center;
+            @include transform( rotateY(90deg) );
+          }
+        }
+      }
+    }//end revolve
+  }// end figure
+}
+
 // .nav-text  {
 //   color: white;
 //   font-family: 'Roboto', sans-serif;
@@ -42,8 +125,8 @@
 
 .navbar-toggle {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: -10px;
   cursor: pointer;
   color: black;
   font-size: 24px;

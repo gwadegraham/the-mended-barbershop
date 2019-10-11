@@ -37,6 +37,11 @@ export class NavbarComponent implements OnInit {
       mainNav.classList.toggle('active');
     });
 
+    $('body').on('click', '.js-burger-toggle-revolve', function(e) {
+      e.preventDefault();
+      $(this).toggleClass('revolve');
+    });
+
   }
 
 }
