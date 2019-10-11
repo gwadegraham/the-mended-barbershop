@@ -32,10 +32,10 @@
 }
 
 .parallax{
-    // background-image: linear-gradient(to bottom, transparent 10%, black 100%), url("src/assets/images/hero-2.jpg"); 
+    // background-image: linear-gradient(to bottom, transparent 10%, black 100%), url("src/assets/images/hero-2.jpg");
     // background-image: linear-gradient(to bottom, #000000, #100f0f, #191919, #232222, #2c2b2b);
     background-image: transparent;
-    min-height: 500px; 
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -56,25 +56,25 @@
 
 .parallax > h1 {
   font-family: 'Roboto', sans-serif;
-  color: #bfa694; 
-  height: 60px; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
-  line-height: 58px; 
-  padding: 80px 0px; 
+  color: #bfa694;
+  height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 58px;
+  padding: 80px 0px;
   text-align: center;
-  font-weight: 500; 
+  font-weight: 500;
   font-size: 80px;
 }
 
 .parallax > i {
   // font-family: 'Roboto', sans-serif;
-  color: #bfa694; 
-  height: 60px; 
-  // text-transform: uppercase; 
-  letter-spacing: 1px; 
-  line-height: 58px; 
-  padding: 60px 0px; 
+  color: #bfa694;
+  height: 60px;
+  // text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 58px;
+  padding: 60px 0px;
   text-align: center;
   font-size: 80px;
   display: inherit;
@@ -118,7 +118,7 @@
 }
 
 
-//fluidbox 
+//fluidbox
 
 a[data-fluidbox] {
     background-color: #bfa694;
