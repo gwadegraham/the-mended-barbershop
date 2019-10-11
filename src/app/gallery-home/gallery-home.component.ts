@@ -47,7 +47,6 @@ export class GalleryHomeComponent implements OnInit {
       const src = img.getAttribute('data-src');
       if (!src) { return; }
       img.src = src;
-      _updateMonitoring();
     }
   }
 
